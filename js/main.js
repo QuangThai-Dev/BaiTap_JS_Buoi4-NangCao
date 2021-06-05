@@ -115,8 +115,7 @@ btnNgayTruocDo.onclick = function() {
         ngay--;
     }
     ngayTruocDo.style.display = 'block';
-    ngayTruocDo.innerHTML = 'Ngày trước đó là: ' +
-        ngay + ' / ' + thang + ' / ' + nam;
+    ngayTruocDo.innerHTML = 'Ngày trước đó là: ' + ngay + ' / ' + thang + ' / ' + nam;
 }
 
 // Bài 2:
