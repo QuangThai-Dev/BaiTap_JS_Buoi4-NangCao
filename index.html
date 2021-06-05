@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- BÀi 1 -->
+    <div class="container">
+        <h1>Bài 1: Ngày Tháng Năm</h1>
+        <div class="form-group ">
+            <label for="">Nhập Ngày Tháng Năm: </label>
+            <div class="row px-3">
+                <input type="text" class="form-control col-3 mr-2" name="" id="ngay" aria-describedby="helpId" placeholder="Ngày">
+                <input type="text" class="form-control  col-3 mr-2" name="" id="thang" aria-describedby="helpId" placeholder="Tháng">
+                <input type="text" class="form-control  col-3 " name="" id="nam" aria-describedby="helpId" placeholder="Năm">
+            </div>
+        </div>
+        <button class="btn btn-danger" id="btnNgayTiepTheo">Ngày Tiếp Theo</button>
+        <button class="btn btn-danger" id="btnNgayTruocDo">Ngày Trước Đó</button>
+        <div id="ngayTiepTheo" class="my-3" style="display: none;">
+
+        </div>
+        <div id="ngayTruocDo" class="my-3" style="display: none;">
+
+        </div>
+    </div>
+    <hr>
+    <!-- BÀi 2 -->
+    <div class="container">
+        <h1>Bài 2: Tính số ngày của tháng</h1>
+        <div class="form-group ">
+            <label for="">Nhập Tháng: </label>
+            <input type="text" class="form-control  col-3" name="" id="soThang" aria-describedby="helpId" placeholder="Tháng">
+        </div>
+        <div class="form-group ">
+            <label for="">Nhập Năm: </label>
+            <input type="text" class="form-control  col-3" name="" id="soNam" aria-describedby="helpId" placeholder="Năm">
+        </div>
+        <button class="btn btn-danger" id="btnNgayOfThang">Số ngày của tháng</button>
+        <div id="thongTinThang" class="py-2">
+            <p id="soNgayThang"></p>
+        </div>
+    </div>
+    <hr>
+    <!-- Bài 3 -->
+    <div class="container">
+        <h1>Bài 3: Cách đọc số nguyên 3 chữ số</h1>
+        <div class="form-group">
+            <label for="">Nhập số nguyên có 3 chữ số</label>
+            <input type="text" class="form-control col-3" name="" id="soBaChuSo" aria-describedby="helpId" placeholder="Số Nguyên có 3 chữ số">
+        </div>
+        <button class="btn btn-danger" id="btnDoc">Đọc</button>
+        <div id="thongTinDoc">
+            <p id='cachDoc' class="py-3"></p>
+        </div>
+    </div>
+    <hr>
+    <!-- BÀi 4 -->
+    <div class="container">
+        <h1>Bài 4: Tính khoảng cách xa nhất</h1>
+        <div class="form-group">
+            <label for="">Nhập họ tên sinh viên 1: </label>
+            <div class="row px-3">
+                <input type="text" class="form-control mb-2 " name="" id="tenSv1" aria-describedby="helpId" placeholder="Họ tên">
+                <input type="text" class="form-control  col-3 mr-2" name="" id="toaDoX1" aria-describedby="helpId" placeholder="Tọa độ x1">
+                <input type="text" class="form-control  col-3 " name="" id="toaDoY1" aria-describedby="helpId" placeholder="Toạ độ y1">
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="">Nhập họ tên sinh viên 2: </label>
+            <div class="row px-3">
+                <input type="text" class="form-control mb-2 " name="" id="tenSv2" aria-describedby="helpId" placeholder="Họ tên">
+                <input type="text" class="form-control  col-3 mr-2" name="" id="toaDoX2" aria-describedby="helpId" placeholder="Tọa độ x2">
+                <input type="text" class="form-control  col-3 " name="" id="toaDoY2" aria-describedby="helpId" placeholder="Toạ độ y2">
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="">Nhập họ tên sinh viên 3: </label>
+            <div class="row px-3">
+                <input type="text" class="form-control mb-2 " name="" id="tenSv3" aria-describedby="helpId" placeholder="Họ tên">
+                <input type="text" class="form-control  col-3 mr-2" name="" id="toaDoX3" aria-describedby="helpId" placeholder="Tọa độ x3">
+                <input type="text" class="form-control  col-3 " name="" id="toaDoY3" aria-describedby="helpId" placeholder="Toạ độ y3">
+            </div>
+
+        </div>
+        <button class="btn btn-danger" id="btnTinhKhoangCach">Tính Khoảng Cách</button>
+        <div id="thongTinSinhVien">
+            <p id="tenSv" class="py-3"></p>
+            <p id="khoangCach"></p>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
