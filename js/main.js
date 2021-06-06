@@ -30,6 +30,23 @@ btnNgayTiepTheo.onclick = function() {
     var thang = Number(document.getElementById('thang').value);
     var nam = Number(document.getElementById('nam').value);
     var ktraNgay;
+    if (isNaN(ngay) || isNaN(thang) || isNaN(thang)) {
+        alert('Yêu cầu nhập số !!');
+        return;
+    }
+    if (ngay < 1 || ngay > 31) {
+        alert('Bạn nhập sai ngày!!');
+        return;
+    }
+    if (thang < 1 || thang > 12) {
+        alert('Bạn nhập sai tháng!!');
+        return;
+    }
+
+    if (nam < 1) {
+        alert('Bạn nhập sai năm!!');
+        return;
+    }
     switch (thang) {
         case 1:
         case 3:
@@ -77,10 +94,30 @@ btnNgayTruocDo.onclick = function() {
     var thang = Number(document.getElementById('thang').value);
     var nam = Number(document.getElementById('nam').value);
     var ktraNgay;
+    if (isNaN(ngay) || isNaN(thang) || isNaN(thang)) {
+        alert('Yêu cầu nhập số !!');
+        return;
+    }
+    if (ngay < 1 || ngay > 31) {
+        alert('Bạn nhập sai ngày!!');
+        return;
+    }
+    if (thang < 1 || thang > 12) {
+        alert('Bạn nhập sai tháng!!');
+        return;
+    }
+
+    if (nam < 1) {
+        alert('Bạn nhập sai năm!!');
+        return;
+    }
     if (ngay == 1 && thang == 1) {
         ngay = 31;
         thang = 12;
         nam--;
+        ngayTruocDo.style.display = 'block';
+        ngayTruocDo.innerHTML = 'Ngày trước đó là: ' + ngay + ' / ' + thang + ' / ' + nam;
+        return;
     }
     if (ngay == 1) {
         thang--;
@@ -114,6 +151,7 @@ btnNgayTruocDo.onclick = function() {
     } else {
         ngay--;
     }
+
     ngayTruocDo.style.display = 'block';
     ngayTruocDo.innerHTML = 'Ngày trước đó là: ' + ngay + ' / ' + thang + ' / ' + nam;
 }
