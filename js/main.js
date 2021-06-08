@@ -42,7 +42,18 @@ btnNgayTiepTheo.onclick = function() {
         alert('Bạn nhập sai tháng!!');
         return;
     }
-
+    if (thang == 4 || thang == 6 || thang == 9 || thang == 11) {
+        if (ngay > 30) {
+            alert('Bạn nhập sai ngày!!');
+            return;
+        }
+    }
+    if (thang == 2) {
+        if (ngay > 29) {
+            alert('Bạn nhập sai ngày!!');
+            return;
+        }
+    }
     if (nam < 1) {
         alert('Bạn nhập sai năm!!');
         return;
@@ -106,7 +117,18 @@ btnNgayTruocDo.onclick = function() {
         alert('Bạn nhập sai tháng!!');
         return;
     }
-
+    if (thang == 4 || thang == 6 || thang == 9 || thang == 11) {
+        if (ngay > 30) {
+            alert('Bạn nhập sai ngày!!');
+            return;
+        }
+    }
+    if (thang == 2) {
+        if (ngay > 29) {
+            alert('Bạn nhập sai ngày!!');
+            return;
+        }
+    }
     if (nam < 1) {
         alert('Bạn nhập sai năm!!');
         return;
